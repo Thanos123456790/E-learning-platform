@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Lilita+One&display=swap');
+*{
+    font-size: 26px;
+}
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    background-color: rgba(139, 139, 209, 0.527);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+header {
+    position: absolute;
+    background-color: rgba(28, 14, 233, 0.2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(57, 5, 242, 0.4);
+    border: 2px solid rgb(67, 14, 227.o.2);
+    border-radius: 15px;
+    top: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-family:Lilita One;
+    color: rgba(9, 9, 9, 0.817);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.year-section, .semester-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgba(20, 4, 77, 0.952);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.year-buttons, .semester-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    background-color: rgba(28, 14, 233, 0.2);
+    color: rgba(11, 10, 10, 0.788);
+    border: 2px solid rgba(251, 246, 246, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(248, 244, 244, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+.semester-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Added gap between buttons */
+    justify-content: center;
+}
+
+/* Your existing CSS styles remain the same */
+
+/* Year button active state */
+.year-button.active {
+    background-color: rgba(35, 54, 223, 0.2);
+}
+
+/* Semester button active state */
+.semester-button.active {
+    background-color: #8133ff;
+    
+}
