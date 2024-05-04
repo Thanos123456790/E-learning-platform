@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         // Function to send rating to the backend
     function sendRatingToBackend(rating) {
-        fetch("http://localhost:5500/save-rating", {
+        fetch("https://e-learning-backend-10.onrender.com/save-rating", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

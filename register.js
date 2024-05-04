@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Send a request to register and generate OTP
-            fetch("http://localhost:5500/register", {
+            fetch("https://e-learning-backend-10.onrender.com/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
