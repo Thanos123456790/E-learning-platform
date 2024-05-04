@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const enteredOTP = document.getElementById("otp").value;
     
     // Make a POST request to verify the entered OTP
-    fetch(`http://localhost:5500/verify-otp?email=${email}`, {
+    fetch(`https://e-learning-backend-10.onrender.com/verify-otp?email=${email}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
