@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Stop and reset the previous timer
     resetTimer();
-fetch(`http://localhost:5500/resend-otp?email=${email}`, {
+fetch(`https://e-learning-backend-10.onrender.com/resend-otp?email=${email}`, {
       method: "POST",
     })
     .then((response) => {
