@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const feedbackMessage = feedbackMessageInput.value;
 
         // Send the feedback message to your backend
-        fetch("http://localhost:5500/send-feedback", {
+        fetch("https://e-learning-backend-10.onrender.com/send-feedback", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

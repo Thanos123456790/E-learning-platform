@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const password = document.getElementById("password").value;
 
             // Send a request to check if the email exists
-            fetch("http://localhost:5500/check-email", {
+            fetch("https://e-learning-backend-10.onrender.com/check-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const loginData = { email, password };
 
                     // Send a request to login
-                    fetch("http://localhost:5500/login", {
+                    fetch("https://e-learning-backend-10.onrender.com/login", {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

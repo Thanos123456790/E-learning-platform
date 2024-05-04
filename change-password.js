@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const newPassword = document.getElementById("new-password").value;
 
             // Send a request to update the password
-            fetch("http://localhost:5500/change-password", {
+            fetch("https://e-learning-backend-10.onrender.com/change-password", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
