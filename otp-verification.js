@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((loginResult) => {
       if (loginResult.success) {
           // Login successful, redirect to the "page.html" page
-          window.location.href = "subscription.html";
+          window.location.href = "https://thanos123456790.github.io/E-learning-platform/subscription.html";
       } else {
           if (loginResult.message === "Invalid password") {
               // Invalid password, show an error message
